@@ -12740,7 +12740,7 @@
     - ae10ee42-e80a-4534-80de-fb3bc8d20d0c: 5a7bcb69-a834-41c2-99c5-285e14be61a4
     - cd115bc5-0845-4631-92eb-fa4e1b16c13f: 3b5b87ce-f56e-4500-a85f-321cf473eb35
   Name: wall1
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 5.500000, y: 0.000000, z: 0.000000}
