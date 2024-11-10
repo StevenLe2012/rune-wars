@@ -1,0 +1,41 @@
+- !<AssetImportMetadata/61519463-dae9-4662-adaf-9a0d0647941d>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> cd96ab64-7f28-4895-949f-a13968d0b0d9
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> cd96ab64-7f28-4895-949f-a13968d0b0d9
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> ff04c84d-30b3-4d43-92b8-edfd92b6ad09
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/196f871a-e0eb-441c-bca0-3abafdf940ba>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/ff04c84d-30b3-4d43-92b8-edfd92b6ad09>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    customCategory: false
+    runtimeLayer: false
+    states: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - heartbeatCategory: ""
+      states: !<string[]>
+        - "init:fast,"
+      initImmediately: false
+      runtimeLayer: DEFAULT
+      customCategory: ""
+  ScriptTypes:
+    -
+      {}
