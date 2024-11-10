@@ -1,0 +1,39 @@
+- !<AssetImportMetadata/447ed1a5-b334-43b4-8dee-c2c017bf113a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 4a77650a-dfd6-4e76-8663-44891994d5e8
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 4a77650a-dfd6-4e76-8663-44891994d5e8
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> af953cd7-43b4-47a3-bc4f-17810d7db14c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/83fe5d62-07e9-45d9-9cd1-f188bfb680c1>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/af953cd7-43b4-47a3-bc4f-17810d7db14c>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    physicsBody: false
+    shortStack: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - physicsBody: !<reference.BodyComponent> 00000000-0000-0000-0000-000000000000
+      shortStack: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.ScriptComponent shortStack
+    - // @input Component.BodyComponent physicsBody

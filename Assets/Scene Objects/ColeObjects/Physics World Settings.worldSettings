@@ -1,0 +1,12 @@
+- !<WorldSettingsAsset/22a80ff6-5e75-4be4-aa69-c2ab34311ee2>
+  PackagePath: ""
+  Gravity: {x: 0.000000, y: 0.000000, z: 0.000000}
+  DefaultMatter: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  SimulationRate: 2
+  SlowStep: 1.000000
+  SlowTime: 1.000000
+  AbsoluteSpeedLimit: 0.000000
+  RelativeSpeedLimit: 0.500000
+  LayerCollisionMatrix:
+    {}

@@ -1,0 +1,292 @@
+- !<AssetImportMetadata/f477d844-a425-456b-9893-787378128df1>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> d31f595a-8ddc-45e7-8d95-c924b2506331
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> d31f595a-8ddc-45e7-8d95-c924b2506331
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 3619351d-431d-4893-9120-32ed6f147bf9
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/73e42dcb-3ad5-45e1-a534-31c3fe560b3a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<BodyComponent/0157718c-62bc-418a-a965-a6c9a2688430>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: false
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: true
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
+- !<SceneObject/0a201bf9-10c6-497d-91cf-f3a8a10546d4>
+  PrefabRemaps:
+    []
+  Name: me
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 78.692780}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 490d8f8c-6822-445e-ae76-933f2a69476b
+    - !<own> 7f94250c-5b0c-4f9b-85d4-dce184d0cc70
+  Components:
+    - !<own> 67b19e52-ccf8-4b28-b7d9-5af62a8d51b3
+    - !<own> 973d53b5-400a-4837-a1d5-082eae09f8ce
+    - !<own> ff663805-24c1-474e-ba8f-b3b30f79f70e
+    - !<own> ec7aca07-ad82-4802-8439-0e7c54e2ba74
+    - !<own> 79eefeae-a189-4599-8eff-07155422f722
+- !<ObjectPrefabAssetData/3619351d-431d-4893-9120-32ed6f147bf9>
+  SourceRemaps:
+    - 1f03b21b-f0c9-44d5-8d0a-e33c272fa6fa: 78e9e9a3-805f-4e98-811a-edbb96912aaa
+    - 456a1007-d1f2-404f-a99f-eb67bd67c1bd: 0157718c-62bc-418a-a965-a6c9a2688430
+    - 47f59e91-6be3-411f-a309-e87107890a8c: 9cf11148-0b68-4194-8f88-37427d7e1a65
+    - 5c0d5dbe-2151-41e4-8a0c-c71344d212ce: 67b19e52-ccf8-4b28-b7d9-5af62a8d51b3
+    - 6e46df77-a0cc-435b-b94f-55053eaae9de: 490d8f8c-6822-445e-ae76-933f2a69476b
+    - 966c5335-bc15-474a-9669-8010a5e66072: d7e8a879-fb03-4cc2-a4b8-c73c3d910085
+    - 9a68bf9b-5551-466a-96cb-f154ce623d06: 79eefeae-a189-4599-8eff-07155422f722
+    - 9e8dc422-23ae-4057-9fa7-52e0a4d992f6: ff663805-24c1-474e-ba8f-b3b30f79f70e
+    - ab2e23a3-709d-41bb-8d33-ba402ed3df84: 0a201bf9-10c6-497d-91cf-f3a8a10546d4
+    - b9cc1a6e-0c8c-434f-880e-faeb5c877122: 7f94250c-5b0c-4f9b-85d4-dce184d0cc70
+    - c7c82d50-3ecc-45f8-b651-308511a3dc3e: 973d53b5-400a-4837-a1d5-082eae09f8ce
+    - d07124fd-e5cd-4f4f-8fdb-5790c07042e0: dbb7a58f-7958-4848-bee8-4372c2d69cf0
+    - d5aa41d9-109e-47ce-9bf9-2a7fd4265f88: ec7aca07-ad82-4802-8439-0e7c54e2ba74
+  SourceState: !<own> 74c088af-b7c6-468d-bc1e-247e5fa308e4
+- !<SceneObject/490d8f8c-6822-445e-ae76-933f2a69476b>
+  PrefabRemaps:
+    []
+  Name: Player_Body
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dbb7a58f-7958-4848-bee8-4372c2d69cf0
+    - !<own> d7e8a879-fb03-4cc2-a4b8-c73c3d910085
+    - !<own> 9cf11148-0b68-4194-8f88-37427d7e1a65
+    - !<own> 0157718c-62bc-418a-a965-a6c9a2688430
+- !<Camera/67b19e52-ccf8-4b28-b7d9-5af62a8d51b3>
+  PrefabRemaps:
+    []
+  Name: Camera
+  Enabled: true
+  renderLayer: 1
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 20.000000
+  Near: 1.000000
+  Far: 1000.000000
+  Fov: 63.541019
+  ClearColor: !<CameraClearColor/00000000-0000-0000-0000-000000000000>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth/00000000-0000-0000-0000-000000000000>
+    Mode: Value
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Perspective
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 2ce51a5b-c86d-4a21-8f4c-8a89bb0e3167
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/74c088af-b7c6-468d-bc1e-247e5fa308e4>
+  PackagePath: ""
+  objects:
+    - !<own> 0a201bf9-10c6-497d-91cf-f3a8a10546d4
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/78e9e9a3-805f-4e98-811a-edbb96912aaa>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 797e3f27-c42e-4dc1-b49f-ac5b2cc2e21f
+  Mesh: !<reference> e2925596-1ce6-4819-b1c2-74937596b9cc
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/79eefeae-a189-4599-8eff-07155422f722>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: false
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 156246aa-0634-43e8-8dc0-4a1377dcd604
+  Mesh: !<reference> add161e5-d193-46df-aabf-83246b4b504c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/7f94250c-5b0c-4f9b-85d4-dce184d0cc70>
+  PrefabRemaps:
+    []
+  Name: Health
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 10.000000, z: 0.000000}
+    rotation: {x: 12.620426, y: 55.843315, z: -15.301572}
+    scale: {x: 3.000000, y: 3.000000, z: 3.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 78e9e9a3-805f-4e98-811a-edbb96912aaa
+- !<DeviceTracking/973d53b5-400a-4837-a1d5-082eae09f8ce>
+  PrefabRemaps:
+    []
+  Name: Device Tracking
+  Enabled: true
+  DeviceTrackingMode: World
+  RotationOptions: !<RotationOptions/00000000-0000-0000-0000-000000000000>
+    InvertRotation: false
+  SurfaceOptions: !<SurfaceOptions/00000000-0000-0000-0000-000000000000>
+    EnhanceWithNativeAR: false
+- !<ScriptComponent/9cf11148-0b68-4194-8f88-37427d7e1a65>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> e1eccae8-a5c4-4105-8c0b-e0c7f2fc3e20
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,go("ready")'
+        - 'ready:collide("greenStone"),log("hiiii"),broadcast("damagePlayer")'
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/d7e8a879-fb03-4cc2-a4b8-c73c3d910085>
+  PrefabRemaps:
+    []
+  Name: CollidedWithPlayer
+  Enabled: false
+  ScriptAsset: !<reference> 4a77650a-dfd6-4e76-8663-44891994d5e8
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      shortStack: !<reference.ScriptComponent> 79a195f0-1456-44ae-abcc-7ef45622a88f
+      physicsBody: !<reference.BodyComponent> 3bbd86df-5009-45c9-bebd-b8230477db4d
+  ScriptTypes:
+    "":
+      {}
+- !<ColliderComponent/dbb7a58f-7958-4848-bee8-4372c2d69cf0>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: false
+  Shape: !<Sphere/00000000-0000-0000-0000-000000000000>
+    FitVisual: true
+    Radius: 6.000000
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: true
+- !<ScriptComponent/ec7aca07-ad82-4802-8439-0e7c54e2ba74>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> e1eccae8-a5c4-4105-8c0b-e0c7f2fc3e20
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,go("ready")'
+        - 'ready:collide("greenStone"),log("hiiii"),broadcast("damagePlayer")'
+  ScriptTypes:
+    "":
+      {}
+- !<BodyComponent/ff663805-24c1-474e-ba8f-b3b30f79f70e>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box/00000000-0000-0000-0000-000000000000>
+    FitVisual: false
+    Size: {x: 10.000000, y: 10.000000, z: 10.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 0ce2f66d-f9da-44cd-9f09-0057d969050e
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: true
+  Dynamic: true
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
