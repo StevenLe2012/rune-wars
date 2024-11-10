@@ -12,6 +12,8 @@ export class SpawnOnPinch extends BaseScriptComponent {
   @input spawnedWall: ObjectPrefab;
   @input spawnedRune: ObjectPrefab;
   @input camera: Camera;
+  @input audio:AudioComponent;
+
 
   @input filterEnabled: boolean;
 
@@ -73,6 +75,10 @@ export class SpawnOnPinch extends BaseScriptComponent {
       let physicsComponent = this.latestSpawnedRune.getComponent(
         "Physics.BodyComponent"
       );
+
+      // add sound
+      this.audio.play(1);
+
       // var forward = this.camera.getTransform().forward; // Get the forward direction of the camera
       // for(let i = 0; i < 10000; i++) {
       //   var newPosition = this.latestSpawnedRune.getTransform().getWorldPosition().add(forward.uniformScale(-1));
