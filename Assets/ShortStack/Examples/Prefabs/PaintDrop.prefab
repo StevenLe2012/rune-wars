@@ -1,0 +1,42 @@
+- !<ObjectPrefab/4b31bdb2-8699-48a8-92dd-d5ca4e2e3eaf>
+  PackagePath: ""
+  objects:
+    - !<own> 7c21bbdf-c8a3-4de5-8f93-571b19edf05d
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/105217f2-0df3-4666-b34f-0005d71d479a>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> aae8b95e-c1b0-4ec6-acd7-73202000ce51
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,sfx("pop",0.2),sphere(10),physics,newVar("COLOR",rArray(["orange","cyan","magenta","pink","lime"])),color("$COLOR"),passVar("COLOR"),hitter'
+        - 'hitted:sfx("durmp",0.4),jiggle,delay(0.1),destroy'
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/7c21bbdf-c8a3-4de5-8f93-571b19edf05d>
+  PrefabRemaps:
+    []
+  Name: PaintDrop
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 99.456253, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 20.000999, y: 20.000999, z: 20.000999}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 105217f2-0df3-4666-b34f-0005d71d479a

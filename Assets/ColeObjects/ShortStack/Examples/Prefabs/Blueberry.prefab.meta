@@ -1,0 +1,101 @@
+- !<AssetImportMetadata/2b63c46d-48ad-40ad-8a8a-d56eb88dbee2>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> bbcf2ebb-ccec-4f66-bdf5-65e7a31e34b5
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> bbcf2ebb-ccec-4f66-bdf5-65e7a31e34b5
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 0e00efdc-e9c7-46e3-b9ef-557e90b96419
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/09aae6fc-5c81-43a2-b70f-323629729829>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/0e00efdc-e9c7-46e3-b9ef-557e90b96419>
+  SourceRemaps:
+    - 56e3fdd2-854b-4ade-b1aa-a6c4b0ec4e63: 55b9b4c1-0d47-4965-8506-0c27159551da
+    - da6e79e6-34c8-4fe8-8fad-006c64336a6e: e00252fe-f51d-49c8-b60c-faa92f472d66
+    - f312f3bf-d90d-4b52-9718-60ded60350cd: be80339d-0583-436e-b203-35328188cd76
+    - f3c5549e-c28b-443e-b964-b7e5980dfcb9: d02bd7eb-0d73-4136-bf30-3f9de58a8d33
+  SourceState: !<own> fe693d18-dd6c-43e6-89d7-c12c209dbd44
+- !<RenderMeshVisual/55b9b4c1-0d47-4965-8506-0c27159551da>
+  PrefabRemaps:
+    []
+  Name: Cube
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 486c913b-1cce-43bb-9839-4602de849277
+  Mesh: !<reference> 563eb77a-0221-488e-91ba-b08933a75552
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/be80339d-0583-436e-b203-35328188cd76>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:physics("Sphere")'
+        - 'throw:fast,sfx("pop"),force(300,300,true),scaleAndDestroy(0.4,1.4)'
+        - 'topping:sfx("pop"),scale(0.5),force(0,null,true),collide("Pancake1","landed"),scaleAndDestroy(0.4,2)'
+        - 'landed:sfx("dermp"),lockState,parent,undynamic,yay,broadcast("berryLanded")'
+        - "physics:unparent,dynamic,scaleAndDestroy(1,1)"
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d02bd7eb-0d73-4136-bf30-3f9de58a8d33>
+  PrefabRemaps:
+    []
+  Name: Blueberry
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 88.353333, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e00252fe-f51d-49c8-b60c-faa92f472d66
+  Components:
+    - !<own> be80339d-0583-436e-b203-35328188cd76
+- !<SceneObject/e00252fe-f51d-49c8-b60c-faa92f472d66>
+  PrefabRemaps:
+    []
+  Name: Cube
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 60.000000, y: 60.000004, z: 60.000004}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 55b9b4c1-0d47-4965-8506-0c27159551da
+- !<ObjectPrefab/fe693d18-dd6c-43e6-89d7-c12c209dbd44>
+  PackagePath: ""
+  objects:
+    - !<own> d02bd7eb-0d73-4136-bf30-3f9de58a8d33
+  LazyLoading: false
+  RetainAssets: true

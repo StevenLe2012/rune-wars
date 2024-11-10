@@ -1,0 +1,229 @@
+- !<AssetImportMetadata/021d0983-bbdd-4d95-be8c-a10111c747c6>
+  ImportedAssetIds:
+    .hidden/Mat: !<reference> 14e794d3-8cfe-4714-9601-721105d4731a
+    1a37ddfdd5ccd9f0: !<reference> b837690d-5cac-4325-b030-b12be7b4cc8e
+    4a3e924fad0e2f27: !<reference> d764536b-5851-4088-a20a-129e801a3ed8
+    56f72180dc9d495f: !<reference> 3565ccc1-d076-4223-93f1-83092ee82f06
+    66780cf3a4dcb2b8: !<reference> ac8d6d53-b5a1-4654-8c7e-384adeed515b
+    714548fa8db2628f: !<reference> 906ea76b-94cc-47b4-aef6-f7bad0135665
+    85d65e0334957852: !<reference> 50a415e3-9b44-4e84-9802-94440b5b0e4f
+    95e890bddb27190c: !<reference> 88109884-9f04-4259-9cce-7322aeee751a
+    96f664b015fcd573: !<reference> 95dcf129-7d99-4281-9419-c455d680acec
+    Dance: !<reference> 54961c93-cc69-4b9d-bdae-1279ce425c8e
+    Materials/Mat: !<reference> 123d7511-f4df-4bd1-b962-b581529a0a2e
+    Materials/Mat|Mat|GraphPassInfo: !<reference> 817d0d81-60b0-4507-96f3-489a2c4f295f
+    Meshes/Cube.001: !<reference> b37e32b4-e818-47eb-a515-6dd927b862c5
+    Scene: !<reference> 23d8ec6b-2119-4a2b-b503-97bac6e0c7a9
+    Textures/franklin: !<reference> 80958a08-842c-433d-b3e0-35ff79317c5d
+    a6345c37dd6cfec0: !<reference> 15fe2b42-a93c-45a0-b074-41dce4427df7
+    f7823ed8e3d3f631: !<reference> 12ede2dd-5f31-4c93-bb22-4e7e6b94e806
+  ImporterName: GltfImporter
+  PrimaryAsset: !<reference> 23d8ec6b-2119-4a2b-b503-97bac6e0c7a9
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpacked
+  AssetDataMap:
+    Scene: !<own> fa07a484-8be8-4e55-bcaa-1b83991f9656
+  DependentFiles:
+    []
+  ImporterSettings: !<GltfImporterSettings/52940180-a2b9-4c7f-841e-57b776df6191>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitize
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangents: true
+    ImportMorphTargetAnimation: true
+    ConvertMetersToCentimeters: true
+    RegenerateTangents: false
+  CompressionSettings: !<ComplexCompressionSettings/5b011071-8c89-485d-a16e-b9bf85c1d7cc>
+    Presets:
+      None Compression: !<SingleCompressionSettings/2051734c-b26a-429d-9773-c91a9f47628e>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings/7923c348-5440-4a37-b578-68a754642707>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionSettings/b60ad25c-93a4-4930-bc03-20a3ecb4bc2f>
+          Level: Medium
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/05b70832-2ee2-48fe-8995-75628475104b>
+  PrefabRemaps:
+    []
+  Name: fraklin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9206e492-ea79-401d-9b82-dbda53f50e19
+  Components:
+    []
+- !<SceneObject/3daa75e1-c3bd-424f-8217-f8c745dc40f9>
+  PrefabRemaps:
+    []
+  Name: Bone
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c53a5bc3-4d5b-4b93-83ee-062b00d693cb
+  Components:
+    []
+- !<SceneObject/52bf0e5c-0a26-45a8-af2e-1234c3640b1b>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 73e4ddbc-f489-496c-9dd7-141d5ebfc8d2
+  Components:
+    - !<own> ed88b228-edd6-4b85-8828-3fac79ab161a
+    - !<own> e43434cd-f8bb-4b90-b73f-d565366481f7
+- !<ObjectPrefab/5354d6cf-6715-493b-8e06-9604c7429c08>
+  PackagePath: ""
+  objects:
+    - !<own> 05b70832-2ee2-48fe-8995-75628475104b
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/6fae4371-5978-48e6-8f81-7bf82c60d26c>
+  PrefabRemaps:
+    []
+  Name: Franklin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c543033b-44ba-42c7-8d2e-45acf8f1e976
+- !<SceneObject/73e4ddbc-f489-496c-9dd7-141d5ebfc8d2>
+  PrefabRemaps:
+    []
+  Name: FranklinRig
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -1.100000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6fae4371-5978-48e6-8f81-7bf82c60d26c
+    - !<own> 3daa75e1-c3bd-424f-8217-f8c745dc40f9
+  Components:
+    []
+- !<SceneObject/9206e492-ea79-401d-9b82-dbda53f50e19>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 52bf0e5c-0a26-45a8-af2e-1234c3640b1b
+  Components:
+    []
+- !<SceneObject/c53a5bc3-4d5b-4b93-83ee-062b00d693cb>
+  PrefabRemaps:
+    []
+  Name: Bone.001
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 1.130711, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<RenderMeshVisual/c543033b-44ba-42c7-8d2e-45acf8f1e976>
+  PrefabRemaps:
+    []
+  Name: Cube.001
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 123d7511-f4df-4bd1-b962-b581529a0a2e
+  Mesh: !<reference> b37e32b4-e818-47eb-a515-6dd927b862c5
+  Skin: !<reference> e43434cd-f8bb-4b90-b73f-d565366481f7
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<Skin/e43434cd-f8bb-4b90-b73f-d565366481f7>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  skinBones:
+    Bone: !<reference> 3daa75e1-c3bd-424f-8217-f8c745dc40f9
+    Bone.001: !<reference> c53a5bc3-4d5b-4b93-83ee-062b00d693cb
+    Franklin: !<reference> 6fae4371-5978-48e6-8f81-7bf82c60d26c
+    FranklinRig: !<reference> 73e4ddbc-f489-496c-9dd7-141d5ebfc8d2
+- !<AnimationPlayer/ed88b228-edd6-4b85-8828-3fac79ab161a>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    - !<AnimationClip/00000000-0000-0000-0000-000000000000>
+      AnimationAsset: !<reference> 54961c93-cc69-4b9d-bdae-1279ce425c8e
+      Name: Dance
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 60.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+- !<ObjectPrefabAssetData/fa07a484-8be8-4e55-bcaa-1b83991f9656>
+  SourceRemaps:
+    - 12ede2dd-5f31-4c93-bb22-4e7e6b94e806: ed88b228-edd6-4b85-8828-3fac79ab161a
+    - 15fe2b42-a93c-45a0-b074-41dce4427df7: 3daa75e1-c3bd-424f-8217-f8c745dc40f9
+    - 3565ccc1-d076-4223-93f1-83092ee82f06: 73e4ddbc-f489-496c-9dd7-141d5ebfc8d2
+    - 50a415e3-9b44-4e84-9802-94440b5b0e4f: e43434cd-f8bb-4b90-b73f-d565366481f7
+    - 88109884-9f04-4259-9cce-7322aeee751a: c543033b-44ba-42c7-8d2e-45acf8f1e976
+    - 906ea76b-94cc-47b4-aef6-f7bad0135665: c53a5bc3-4d5b-4b93-83ee-062b00d693cb
+    - 95dcf129-7d99-4281-9419-c455d680acec: 52bf0e5c-0a26-45a8-af2e-1234c3640b1b
+    - ac8d6d53-b5a1-4654-8c7e-384adeed515b: 05b70832-2ee2-48fe-8995-75628475104b
+    - b837690d-5cac-4325-b030-b12be7b4cc8e: 6fae4371-5978-48e6-8f81-7bf82c60d26c
+    - d764536b-5851-4088-a20a-129e801a3ed8: 9206e492-ea79-401d-9b82-dbda53f50e19
+  SourceState: !<own> 5354d6cf-6715-493b-8e06-9604c7429c08

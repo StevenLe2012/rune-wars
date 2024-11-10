@@ -1,0 +1,99 @@
+- !<ObjectPrefab/3d68730e-cb61-4417-95f4-c4dfdb6dfa4c>
+  PackagePath: ""
+  objects:
+    - !<own> 14d3f0b2-e2e1-439b-825b-c865baf4f612
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/14d3f0b2-e2e1-439b-825b-c865baf4f612>
+  PrefabRemaps:
+    []
+  Name: Target Copy
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -97.752365, y: 0.000000, z: -150.000000}
+    rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5069cad1-0f84-43b3-8995-83e0a76a9bf1
+  Components:
+    - !<own> 7ae8d34e-b49b-4b15-8a05-ca9f004a71d6
+- !<SceneObject/5069cad1-0f84-43b3-8995-83e0a76a9bf1>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 7.440376, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 40.000000, y: 40.000000, z: 40.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9ce6a3a5-c0d9-46d0-b792-1c1a406f6f79
+    - !<own> c500703c-b714-43e6-bab2-41c7489f7cff
+- !<ScriptComponent/7ae8d34e-b49b-4b15-8a05-ca9f004a71d6>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,material("Default","target"),physics("Cylinder"),undynamic'
+        - 'hit:lockState,flash(2,0.4,"white"),dynamic,goHitDeep,force(r(-500,500),r(300,500),r(200,500)),delay(1),focus,alpha(0,1),destroy'
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/9ce6a3a5-c0d9-46d0-b792-1c1a406f6f79>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    []
+  Mesh: !<reference> ede64b04-1951-4d61-b58f-ec0b5679e775
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/c500703c-b714-43e6-bab2-41c7489f7cff>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - "init:fast,"
+        - "hit:hitEffect"
+  ScriptTypes:
+    "":
+      {}

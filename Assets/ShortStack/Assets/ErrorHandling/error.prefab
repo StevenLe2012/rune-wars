@@ -1,0 +1,95 @@
+- !<ObjectPrefab/f5378f88-5a87-4bda-b5a0-224ad086344a>
+  PackagePath: ""
+  objects:
+    - !<own> 7b3cac53-c3da-45fd-9658-6072e2f55c61
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/469faf86-794d-48e8-b446-0c3987ca8bea>
+  PrefabRemaps:
+    []
+  Name: Source-ERROR v10b
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e5458abb-3b1d-4aba-bf9a-2faa6a10ad22
+- !<SceneObject/7b3cac53-c3da-45fd-9658-6072e2f55c61>
+  PrefabRemaps:
+    []
+  Name: error
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ba47937a-6eb7-4716-a202-160c11367cf2
+  Components:
+    []
+- !<AnimationPlayer/7eb693d0-f305-4440-9e64-a5832d977ae0>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    []
+- !<SceneObject/ba47937a-6eb7-4716-a202-160c11367cf2>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> bc8ff3bd-3f3f-4d11-a3b4-f2573a96ef93
+  Components:
+    []
+- !<SceneObject/bc8ff3bd-3f3f-4d11-a3b4-f2573a96ef93>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 469faf86-794d-48e8-b446-0c3987ca8bea
+  Components:
+    - !<own> 7eb693d0-f305-4440-9e64-a5832d977ae0
+- !<RenderMeshVisual/e5458abb-3b1d-4aba-bf9a-2faa6a10ad22>
+  PrefabRemaps:
+    []
+  Name: Source-ERROR v10b.001
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    []
+  Mesh: !<reference> d610aea5-d36c-4dd5-9b91-e4e1d72166d9
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

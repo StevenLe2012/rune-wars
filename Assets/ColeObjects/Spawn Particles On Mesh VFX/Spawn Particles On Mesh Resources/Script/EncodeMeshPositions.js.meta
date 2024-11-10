@@ -1,0 +1,50 @@
+- !<AssetImportMetadata/5bd913dc-50eb-4eae-85ac-6e3bf0f61165>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> dc2515e7-a04c-4b5a-8374-4aa26c735571
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> dc2515e7-a04c-4b5a-8374-4aa26c735571
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 3adc5467-c29c-425d-bb2a-570d7836cae1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/a9ebc73c-8a4a-40f5-afef-886858d2dde0>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/3adc5467-c29c-425d-bb2a-570d7836cae1>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    MeshVisualsToEncode: false
+    advanced: false
+    encodeResolution: false
+    feedbackMaterial: false
+    meshDataMaterial: false
+    objectBoundsMax: false
+    objectBoundsMin: false
+    vfx: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - MeshVisualsToEncode: !<reference.RenderMeshVisual[]>
+        []
+      vfx: !<reference.VFXComponent[]>
+        []
+      meshDataMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      feedbackMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      advanced: false
+      encodeResolution: 64
+      objectBoundsMin: !<Vec3> {x: -500.000000, y: -500.000000, z: -500.000000}
+      objectBoundsMax: !<Vec3> {x: 500.000000, y: 500.000000, z: 500.000000}
+  ScriptTypes:
+    -
+      {}

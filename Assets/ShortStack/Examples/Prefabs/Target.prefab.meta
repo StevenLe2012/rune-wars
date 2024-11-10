@@ -1,0 +1,121 @@
+- !<AssetImportMetadata/3441e249-7274-4311-9e67-297484cb20a3>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> aa80aed6-e529-4e83-a935-e98abd8bc222
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> aa80aed6-e529-4e83-a935-e98abd8bc222
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> bfc49bfc-526f-4b55-8aef-e1469f689b00
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/05c08ffd-f573-4c2e-a097-afaaed265f5c>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/2a626fc0-bce7-4c80-bb89-439287539d89>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    []
+  Mesh: !<reference> 9292f483-78d1-417e-a09c-3e120e2af8cb
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/2d85fa54-65dd-45c7-9292-d29f159bbf5b>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 7.440376, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 40.000000, y: 40.000000, z: 40.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2a626fc0-bce7-4c80-bb89-439287539d89
+    - !<own> 7b1e518b-dcd5-4bfa-b420-b83e3c61a6f2
+- !<SceneObject/35a6313c-3c0e-4ba7-988b-9a071ee79b09>
+  PrefabRemaps:
+    []
+  Name: Target Copy
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -97.752365, y: 0.000000, z: -150.000000}
+    rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 2d85fa54-65dd-45c7-9292-d29f159bbf5b
+  Components:
+    - !<own> f2d30bc8-2d4e-4af7-95e8-ee7328dcb377
+- !<ScriptComponent/7b1e518b-dcd5-4bfa-b420-b83e3c61a6f2>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> aae8b95e-c1b0-4ec6-acd7-73202000ce51
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - "init:fast,"
+        - "hit:hitEffect"
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/bfc49bfc-526f-4b55-8aef-e1469f689b00>
+  SourceRemaps:
+    - 2d73f022-5ca8-416b-8b88-380862ea395e: f2d30bc8-2d4e-4af7-95e8-ee7328dcb377
+    - 40a75789-67cd-40ce-b9ee-922af712c118: 7b1e518b-dcd5-4bfa-b420-b83e3c61a6f2
+    - 742a402a-6cfe-4a68-aec9-0d8f7f1b776f: 35a6313c-3c0e-4ba7-988b-9a071ee79b09
+    - 87c22ffd-b2ea-4828-a647-0cc72b9d5d2c: 2a626fc0-bce7-4c80-bb89-439287539d89
+    - c5243b9f-b77c-4152-ac4a-31de3ce3eb68: 2d85fa54-65dd-45c7-9292-d29f159bbf5b
+  SourceState: !<own> f6f25c0a-6b27-4bcc-8b8d-f966759d87d8
+- !<ScriptComponent/f2d30bc8-2d4e-4af7-95e8-ee7328dcb377>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> aae8b95e-c1b0-4ec6-acd7-73202000ce51
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,material("Default","target"),physics("Cylinder"),undynamic'
+        - 'hit:lockState,flash(2,0.4,"white"),dynamic,goHitDeep,force(r(-500,500),r(300,500),r(200,500)),delay(1),focus,alpha(0,1),destroy'
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/f6f25c0a-6b27-4bcc-8b8d-f966759d87d8>
+  PackagePath: ""
+  objects:
+    - !<own> 35a6313c-3c0e-4ba7-988b-9a071ee79b09
+  LazyLoading: false
+  RetainAssets: true

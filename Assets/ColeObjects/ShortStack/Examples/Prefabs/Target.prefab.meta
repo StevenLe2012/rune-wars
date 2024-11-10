@@ -1,0 +1,121 @@
+- !<AssetImportMetadata/158eb28b-5cc1-410e-84c5-7b4cbd5c3644>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 3d68730e-cb61-4417-95f4-c4dfdb6dfa4c
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 3d68730e-cb61-4417-95f4-c4dfdb6dfa4c
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 0f5c3878-c62d-4192-8860-0d0a433ff6a8
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/04f3ed65-dc3c-4e98-8344-3c479ebd93d0>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/0f5c3878-c62d-4192-8860-0d0a433ff6a8>
+  SourceRemaps:
+    - 14d3f0b2-e2e1-439b-825b-c865baf4f612: 2f8eb2a8-f457-4489-b17a-d76500dd56c6
+    - 5069cad1-0f84-43b3-8995-83e0a76a9bf1: 6953f1e5-8aa8-4558-87ae-7a5b316a7523
+    - 7ae8d34e-b49b-4b15-8a05-ca9f004a71d6: 142bd042-56f0-4082-a297-9ea3127d5e59
+    - 9ce6a3a5-c0d9-46d0-b792-1c1a406f6f79: 15e1204c-8cea-4b98-a78b-9282c701f697
+    - c500703c-b714-43e6-bab2-41c7489f7cff: e8edc67a-2f1e-44de-97bc-95db985b3c29
+  SourceState: !<own> 74146632-18f8-4232-a607-6265bf9bacb1
+- !<ScriptComponent/142bd042-56f0-4082-a297-9ea3127d5e59>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,material("Default","target"),physics("Cylinder"),undynamic'
+        - 'hit:lockState,flash(2,0.4,"white"),dynamic,goHitDeep,force(r(-500,500),r(300,500),r(200,500)),delay(1),focus,alpha(0,1),destroy'
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/15e1204c-8cea-4b98-a78b-9282c701f697>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    []
+  Mesh: !<reference> ede64b04-1951-4d61-b58f-ec0b5679e775
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/2f8eb2a8-f457-4489-b17a-d76500dd56c6>
+  PrefabRemaps:
+    []
+  Name: Target Copy
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -97.752365, y: 0.000000, z: -150.000000}
+    rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6953f1e5-8aa8-4558-87ae-7a5b316a7523
+  Components:
+    - !<own> 142bd042-56f0-4082-a297-9ea3127d5e59
+- !<SceneObject/6953f1e5-8aa8-4558-87ae-7a5b316a7523>
+  PrefabRemaps:
+    []
+  Name: Cylinder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 7.440376, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 40.000000, y: 40.000000, z: 40.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 15e1204c-8cea-4b98-a78b-9282c701f697
+    - !<own> e8edc67a-2f1e-44de-97bc-95db985b3c29
+- !<ObjectPrefab/74146632-18f8-4232-a607-6265bf9bacb1>
+  PackagePath: ""
+  objects:
+    - !<own> 2f8eb2a8-f457-4489-b17a-d76500dd56c6
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/e8edc67a-2f1e-44de-97bc-95db985b3c29>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - "init:fast,"
+        - "hit:hitEffect"
+  ScriptTypes:
+    "":
+      {}

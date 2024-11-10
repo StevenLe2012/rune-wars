@@ -1,0 +1,7 @@
+//@ui {"widget":"label", "label":"Select an example below to see how ShortStack works!"}
+//@input string example = "introduction" { "label": "Pick Example", "widget":"combobox", "values":[{"label":"Introduction", "value":"introduction"}, {"label":"Shooter", "value":"shooter"}, {"label":"Physics 101", "value":"pE"}, {"label":"Enemy Behavior", "value":"enemyExample"}, {"label":"Pause / Play", "value":"pausePlayExample"}, {"label":"Text Effects", "value":"textExample"}, {"label":"Custom Shortcut", "value":"customExample"}, {"label":"Connect to Script", "value":"scriptExample"}, {"label":"Move Stuff", "value":"moveExample"}, {"label":"Spawn Stuff", "value":"spawnExample"}, {"label":"Textures", "value":"textureExample"}, {"label":"Animation", "value":"animExample"}, {"label":"Variables", "value":"variableExample"}, {"label":"Pass Variable", "value":"passVarExample"}, {"label":"Focus", "value":"focusExample"}, {"label":"Snappy Menu", "value":"snappyMenu"}, {"label":"Crazy Snake", "value":"crazySnake"}, {"label":"World Query", "value":"worldQuery"}]}
+global.Heartbeat.api.add(script);
+
+script.api.addDelay("waitForReady",0.1,function () {
+   script.getSceneObject().stateMachine.api.go(script.example); 
+});

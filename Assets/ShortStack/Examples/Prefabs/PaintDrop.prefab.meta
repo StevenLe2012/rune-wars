@@ -1,0 +1,61 @@
+- !<AssetImportMetadata/377a7763-35ce-49ca-a9b2-37a5b37362db>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 4b31bdb2-8699-48a8-92dd-d5ca4e2e3eaf
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 4b31bdb2-8699-48a8-92dd-d5ca4e2e3eaf
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> ce56e1d1-bd83-46ed-861b-c9a5fa18b7fb
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/2ecd57df-1e20-4d57-87fc-d34ec826e7dd>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/08698a38-0e3b-4f70-8b81-b465faa80776>
+  PrefabRemaps:
+    []
+  Name: PaintDrop
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 99.456253, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 20.000999, y: 20.000999, z: 20.000999}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 420c46cc-75e6-4ac7-b187-f73002bd5bf7
+- !<ObjectPrefab/3e939b5f-ca21-4d10-b97f-2fdd9f832e2d>
+  PackagePath: ""
+  objects:
+    - !<own> 08698a38-0e3b-4f70-8b81-b465faa80776
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/420c46cc-75e6-4ac7-b187-f73002bd5bf7>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> aae8b95e-c1b0-4ec6-acd7-73202000ce51
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,sfx("pop",0.2),sphere(10),physics,newVar("COLOR",rArray(["orange","cyan","magenta","pink","lime"])),color("$COLOR"),passVar("COLOR"),hitter'
+        - 'hitted:sfx("durmp",0.4),jiggle,delay(0.1),destroy'
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/ce56e1d1-bd83-46ed-861b-c9a5fa18b7fb>
+  SourceRemaps:
+    - 105217f2-0df3-4666-b34f-0005d71d479a: 420c46cc-75e6-4ac7-b187-f73002bd5bf7
+    - 7c21bbdf-c8a3-4de5-8f93-571b19edf05d: 08698a38-0e3b-4f70-8b81-b465faa80776
+  SourceState: !<own> 3e939b5f-ca21-4d10-b97f-2fdd9f832e2d

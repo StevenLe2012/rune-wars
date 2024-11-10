@@ -1,0 +1,95 @@
+- !<ObjectPrefab/f9e3eba4-c851-4fa8-9b04-98364e7aa356>
+  PackagePath: ""
+  objects:
+    - !<own> d0a4ec2f-3a06-46aa-9fe8-ab90a8cc27fe
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/4e90977d-1904-46cf-bef4-eef4a9086365>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> df4f9c2c-59f6-4c1f-8173-47d5640c8362
+  Components:
+    - !<own> 5b372962-64a6-4247-b2a2-9f8cfb24674e
+- !<AnimationPlayer/5b372962-64a6-4247-b2a2-9f8cfb24674e>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    []
+- !<RenderMeshVisual/65a1abbd-3f26-4801-8377-417c692b3cdb>
+  PrefabRemaps:
+    []
+  Name: Cube
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> e24fb669-7205-4b2d-b43b-daa3fd47b6ac
+  Mesh: !<reference> 60599fe8-2cc7-420b-9e41-ce63eac1e455
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/d0a4ec2f-3a06-46aa-9fe8-ab90a8cc27fe>
+  PrefabRemaps:
+    []
+  Name: blueberry
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> e3d42703-506f-4a71-bb8f-5ff81b1d3fc8
+  Components:
+    []
+- !<SceneObject/df4f9c2c-59f6-4c1f-8173-47d5640c8362>
+  PrefabRemaps:
+    []
+  Name: Cube
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 1.628520, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 65a1abbd-3f26-4801-8377-417c692b3cdb
+- !<SceneObject/e3d42703-506f-4a71-bb8f-5ff81b1d3fc8>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4e90977d-1904-46cf-bef4-eef4a9086365
+  Components:
+    []

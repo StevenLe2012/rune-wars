@@ -1,0 +1,80 @@
+- !<ObjectPrefab/c7644821-d919-46c7-8790-39d9f438f5b6>
+  PackagePath: ""
+  objects:
+    - !<own> a0a1c353-aab4-4d09-af4a-82451995ba97
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/26f03274-2728-4bc2-a555-617e87230d55>
+  PrefabRemaps:
+    []
+  Name: Cube
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 254a6120-d7f0-48c3-ab46-2c44b6b1c0a0
+  Mesh: !<reference> 60599fe8-2cc7-420b-9e41-ce63eac1e455
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/497a89cf-e9aa-4be7-9ba9-102ddd29c2d3>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> aae8b95e-c1b0-4ec6-acd7-73202000ce51
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:physics("Sphere")'
+        - 'throw:fast,sfx("pop"),force(300,300,true),scaleAndDestroy(0.4,1.4)'
+        - 'topping:sfx("pop"),scale(0.5),force(0,null,true),collide("Pancake1","landed"),scaleAndDestroy(0.4,2)'
+        - 'landed:sfx("dermp"),lockState,parent,undynamic,yay,broadcast("berryLanded")'
+        - "physics:unparent,dynamic,scaleAndDestroy(1,1)"
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/90bef4b6-f80b-4d5a-8a0b-28b8e0607f6d>
+  PrefabRemaps:
+    []
+  Name: Cube
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 60.000000, y: 60.000004, z: 60.000004}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 26f03274-2728-4bc2-a555-617e87230d55
+- !<SceneObject/a0a1c353-aab4-4d09-af4a-82451995ba97>
+  PrefabRemaps:
+    []
+  Name: Blueberry
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 88.353333, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 90bef4b6-f80b-4d5a-8a0b-28b8e0607f6d
+  Components:
+    - !<own> 497a89cf-e9aa-4be7-9ba9-102ddd29c2d3

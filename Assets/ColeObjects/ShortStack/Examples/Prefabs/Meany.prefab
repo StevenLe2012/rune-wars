@@ -1,0 +1,99 @@
+- !<ObjectPrefab/9fb3d6f7-2a2e-4732-b7d5-5ddddffb78c9>
+  PackagePath: ""
+  objects:
+    - !<own> 2de076db-9dde-4e49-bef4-54db0ea62b45
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/2de076db-9dde-4e49-bef4-54db0ea62b45>
+  PrefabRemaps:
+    []
+  Name: Meany
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -180.000000, y: -0.000005, z: -180.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ac75e35f-91d1-453f-98b1-a6c216561ec2
+  Components:
+    - !<own> e8a83e65-57c2-4311-812b-dbdaf300d7ec
+- !<ScriptComponent/9160fdc5-940f-45e4-bff8-3cc94b68e703>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - "init:fast,jiggle"
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/ac75e35f-91d1-453f-98b1-a6c216561ec2>
+  PrefabRemaps:
+    []
+  Name: MeanyMesh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 50.000000, y: 50.000000, z: 50.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ee17c61e-4e52-486a-8680-f4a30de4d981
+    - !<own> 9160fdc5-940f-45e4-bff8-3cc94b68e703
+- !<ScriptComponent/e8a83e65-57c2-4311-812b-dbdaf300d7ec>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:physics,zeroGravity,force(500),hitter(null,"hit","hitted"),scaleAndDestroy(0.4,2)'
+        - 'hitted:lockState("hit"),flash("white",1,0.4),scaleAndDestroy(0.4,1)'
+        - "hit:"
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/ee17c61e-4e52-486a-8680-f4a30de4d981>
+  PrefabRemaps:
+    []
+  Name: Cube.009
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 53695269-8e2e-4f3b-89dc-62df1d3334df
+  Mesh: !<reference> 93b0587e-f107-4e16-a2ea-2af8e53aebb8
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

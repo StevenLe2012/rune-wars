@@ -1,0 +1,61 @@
+- !<AssetImportMetadata/fda62406-09cc-4825-b957-e5042517c614>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 1cf1504f-a96f-4f61-8d0b-38850199eb08
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 1cf1504f-a96f-4f61-8d0b-38850199eb08
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> a3f2232e-c18c-4085-9b6b-52b2ae5bdbb4
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/f9a93c6e-0c70-4a7f-a349-5b4db0420cf8>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/6edda09e-cd41-47e2-884c-302daf46c8a2>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> 71bf7460-5547-4a43-8942-4f6d06f8d317
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fast,sfx("pop",0.2),sphere(10),physics,newVar("COLOR",rArray(["orange","cyan","magenta","pink","lime"])),color("$COLOR"),passVar("COLOR"),hitter'
+        - 'hitted:sfx("durmp",0.4),jiggle,delay(0.1),destroy'
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefabAssetData/a3f2232e-c18c-4085-9b6b-52b2ae5bdbb4>
+  SourceRemaps:
+    - 6a3ead6e-3818-4cba-a3ea-b76c5a7c8fca: ec78064f-19f5-43b4-89e8-3788e38cb481
+    - ca7dc3e6-fb65-4bb9-b33d-83c60efc444d: 6edda09e-cd41-47e2-884c-302daf46c8a2
+  SourceState: !<own> fe95b086-f4be-408c-a544-ed4799c8b843
+- !<SceneObject/ec78064f-19f5-43b4-89e8-3788e38cb481>
+  PrefabRemaps:
+    []
+  Name: PaintDrop
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 99.456253, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 20.000999, y: 20.000999, z: 20.000999}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6edda09e-cd41-47e2-884c-302daf46c8a2
+- !<ObjectPrefab/fe95b086-f4be-408c-a544-ed4799c8b843>
+  PackagePath: ""
+  objects:
+    - !<own> ec78064f-19f5-43b4-89e8-3788e38cb481
+  LazyLoading: false
+  RetainAssets: true

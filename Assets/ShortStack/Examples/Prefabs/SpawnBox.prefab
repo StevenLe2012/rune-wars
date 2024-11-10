@@ -1,0 +1,64 @@
+- !<ObjectPrefab/d6026ce0-880e-4603-928e-3402d5695b3a>
+  PackagePath: ""
+  objects:
+    - !<own> 59d21c2d-c553-4214-b30e-63661132ad50
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/1c63ab4b-297c-4c31-81b6-917f763e93d8>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a19a7afb-2dc6-42c1-9ce1-21a2974de8f5
+  Mesh: !<reference> 51c626c3-a3df-43e3-87b6-97753f5ff90a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ScriptComponent/2fd7b1bc-b13e-4452-8868-7cc0f0e44fea>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> aae8b95e-c1b0-4ec6-acd7-73202000ce51
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:fakeFly(r(-1,1),null,r(-1,1)),color("red"),scaleAndDestroy(1,1)'
+        - 'makeYellow:color("yellow"),scaleAndDestroy(1,1)'
+        - 'makeBlue:color("cyan"),scaleAndDestroy(1,1)'
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/59d21c2d-c553-4214-b30e-63661132ad50>
+  PrefabRemaps:
+    []
+  Name: SpawnBox
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 20.000000, y: 20.000000, z: 20.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1c63ab4b-297c-4c31-81b6-917f763e93d8
+    - !<own> 2fd7b1bc-b13e-4452-8868-7cc0f0e44fea

@@ -14,7 +14,7 @@ viewConfig:
     output: Live
     stereoOutputEye: Center
     deviceTypeOverride: Unknown
-  cameraType: Front
+  cameraType: Back
 metaInfo:
   hints:
     []

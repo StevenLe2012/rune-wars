@@ -1,0 +1,47 @@
+- !<AnimationAsset/bf0f4bd6-3ca2-47de-8c5f-a68696c18776>
+  PackagePath: ""
+  AnimationPropertiesLayers:
+    LeftHand:
+      position:
+        - time: 0.000000
+          value: {x: 0.714412, y: -0.012220, z: 0.807509}
+        - time: 1.000000
+          value: {x: 0.714412, y: -0.012220, z: 0.807509}
+      rotation:
+        - time: 0.000000
+          value: {0: 0.707107, 1: -0.000000, 2: -0.000000, 3: 0.707107}
+        - time: 1.000000
+          value: {0: 0.707107, 1: -0.000000, 2: -0.000000, 3: 0.707107}
+      scale:
+        - time: 0.000000
+          value: {x: 1.000000, y: 1.000000, z: 1.000000}
+        - time: 1.000000
+          value: {x: 1.000000, y: 1.000000, z: 1.000000}
+      vertexCache:
+        []
+      visibilityAnimation:
+        []
+      blendShapes:
+        []
+    RightHand:
+      position:
+        - time: 0.000000
+          value: {x: -0.840220, y: -0.012220, z: 0.807509}
+        - time: 1.000000
+          value: {x: -0.840220, y: -0.012220, z: 0.807509}
+      rotation:
+        - time: 0.000000
+          value: {0: 0.707107, 1: -0.000000, 2: -0.000000, 3: 0.707107}
+        - time: 1.000000
+          value: {0: 0.707107, 1: -0.000000, 2: -0.000000, 3: 0.707107}
+      scale:
+        - time: 0.000000
+          value: {x: 1.000000, y: 1.000000, z: 1.000000}
+        - time: 1.000000
+          value: {x: 1.000000, y: 1.000000, z: 1.000000}
+      vertexCache:
+        []
+      visibilityAnimation:
+        []
+      blendShapes:
+        []

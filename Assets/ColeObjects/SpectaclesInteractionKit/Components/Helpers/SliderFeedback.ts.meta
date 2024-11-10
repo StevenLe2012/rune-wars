@@ -1,0 +1,62 @@
+- !<AssetImportMetadata/66c63946-2c38-4afa-a568-bbb4a9c71b0e>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> aacaa0ec-a7be-4cc8-ab43-126f93ca1858
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> aacaa0ec-a7be-4cc8-ab43-126f93ca1858
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> f838197b-6768-4b3e-b721-9adc341db48d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/7adbf2f4-0dc7-47c0-a7f0-e7f319c4811a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f838197b-6768-4b3e-b721-9adc341db48d>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    debugElements: false
+    showDebug: false
+    sliderKnobIdleMaterial: false
+    sliderKnobMesh: false
+    sliderKnobSelectedMaterial: false
+    sliderProgressAudio: false
+    sliderTrackMaterial: false
+    sliderTrackMesh: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - showDebug: false
+      debugElements: !<reference.SceneObject[]>
+        []
+      sliderKnobMesh: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      sliderKnobIdleMaterial: !<reference.Material> 695716b8-d4bf-4594-9d7d-268a16cb0f58
+      sliderKnobSelectedMaterial: !<reference.Material> 96de2e49-a397-4867-a12c-d54e2fa41377
+      sliderTrackMesh: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
+      sliderTrackMaterial: !<reference.Material> 33e9b79a-ca5e-4b2c-a471-4c9256c46a3b
+      sliderProgressAudio: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input bool showDebug = false {"hint":"The components under DebugElements will be hidden on start if showDebug is unchecked."}'
+    - "// @input SceneObject[] debugElements"
+    - '// @ui {"widget":"group_start", "label":"Slider Knob"}'
+    - '// @input Component.RenderMeshVisual sliderKnobMesh {"label":"Mesh"}'
+    - '// @input Asset.Material sliderKnobIdleMaterial {"label":"Idle Material"}'
+    - '// @input Asset.Material sliderKnobSelectedMaterial {"label":"Selected Material"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Slider Track"}'
+    - // @input Component.RenderMeshVisual sliderTrackMesh
+    - // @input Asset.Material sliderTrackMaterial
+    - '// @ui {"widget":"group_end"}'
+    - // @input Asset.AudioTrackAsset sliderProgressAudio

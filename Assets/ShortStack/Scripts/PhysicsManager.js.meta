@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/fa2138ee-6821-48eb-94ff-0b280c07059d>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 3d7362cb-8318-4043-bfcf-391fa5bfa680
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 3d7362cb-8318-4043-bfcf-391fa5bfa680
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 108d2aac-bc91-4f06-8351-0e55ab6b5376
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/f8aa6362-96d5-4d35-ae45-fc6df3461c44>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/108d2aac-bc91-4f06-8351-0e55ab6b5376>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    filters: false
+    physicsMatters: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - filters: !<reference.Filter[]>
+        []
+      worldSettings: !<reference.WorldSettings[]>
+        []
+      defaultWorldSettings: !<reference.WorldSettingsAsset> 00000000-0000-0000-0000-000000000000
+      defaultMatter: !<reference.Matter> 00000000-0000-0000-0000-000000000000
+      physicsMatters: !<reference.Matter[]>
+        []
+  ScriptTypes:
+    -
+      {}
