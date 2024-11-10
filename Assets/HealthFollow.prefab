@@ -1,0 +1,182 @@
+- !<ObjectPrefab/2e18658b-7d37-4ec4-b993-4ea2f32402f0>
+  PackagePath: ""
+  objects:
+    - !<own> f81b6433-c37f-4be4-a14a-45a5abaa5161
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/1d5edee1-4329-4661-a025-1ec9229bbdf8>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> d6cb8b4e-f51e-42b9-8cef-a9498174559d
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - 'init:newVar("hp",100),listen("damagePlayer","updateHP",true)'
+        - 'updateHP:is("hp>=5"),updateVar("hp-=5"),scale($hp/100,1,1,0.5),log("I was hit")'
+        - 'resetHP:updateVar("hp",100)'
+  ScriptTypes:
+    "":
+      {}
+- !<RenderMeshVisual/2119c3d9-26b6-4504-bf6c-63dab6ef8fe2>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0052d7bc-2823-430d-8d16-926cf85a1c4f
+  Mesh: !<reference> b387b7cc-0dc5-4eb0-9768-70117f1f193c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/22b4b74d-a504-41dc-a736-1f9336234769>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4d58425e-b321-40a4-b746-af2dc4bd5778
+  Mesh: !<reference> b387b7cc-0dc5-4eb0-9768-70117f1f193c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<Image/400281e6-04a5-4cc6-a56e-318fee17d573>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d4519791-7607-41a2-b5f1-f6827d49510b
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<SceneObject/5ad660ec-4ed0-4fc9-a91b-25f86c09d31f>
+  PrefabRemaps:
+    []
+  Name: hp
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 25.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 50.000000, y: 3.000000, z: 0.100000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2119c3d9-26b6-4504-bf6c-63dab6ef8fe2
+- !<SceneObject/68514814-c4b4-4676-9d1f-9d49be6501e4>
+  PrefabRemaps:
+    []
+  Name: HealthBar
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 5.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5ad660ec-4ed0-4fc9-a91b-25f86c09d31f
+  Components:
+    - !<own> 1d5edee1-4329-4661-a025-1ec9229bbdf8
+- !<SceneObject/83ab2ea5-5ad9-4651-9770-15f484b206ad>
+  PrefabRemaps:
+    []
+  Name: hpBg
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 30.000000, y: 0.000000, z: -0.010000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 50.000000, y: 3.000000, z: 0.100000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 22b4b74d-a504-41dc-a736-1f9336234769
+- !<ScriptComponent/b48d2189-0d4b-4dc9-9333-e9e3382b2257>
+  PrefabRemaps:
+    []
+  Name: ShortStack
+  Enabled: true
+  ScriptAsset: !<reference> d6cb8b4e-f51e-42b9-8cef-a9498174559d
+  ScriptInputsDefault:
+    runtimeLayer: true
+    customCategory: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      runtimeLayer: DEFAULT
+      customCategory: ""
+      states: !<string[]>
+        - "init:fast,lookAt,cameraAnchor(160,40,-30),follow(10)"
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/d67f5c01-39f8-4f7f-96a7-5880c650b0ec>
+  PrefabRemaps:
+    []
+  Name: heart
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 400281e6-04a5-4cc6-a56e-318fee17d573
+- !<SceneObject/f81b6433-c37f-4be4-a14a-45a5abaa5161>
+  PrefabRemaps:
+    []
+  Name: HealthFollow
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d67f5c01-39f8-4f7f-96a7-5880c650b0ec
+    - !<own> 83ab2ea5-5ad9-4651-9770-15f484b206ad
+    - !<own> 68514814-c4b4-4676-9d1f-9d49be6501e4
+  Components:
+    - !<own> b48d2189-0d4b-4dc9-9333-e9e3382b2257
