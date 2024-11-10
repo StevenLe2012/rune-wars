@@ -4728,26 +4728,6 @@
   ScriptTypes:
     "":
       {}
-- !<ScriptComponent/16f67b22-06b7-4621-a9e4-3b6f13c4bb47>
-  PrefabRemaps:
-    []
-  Name: ShortStack
-  Enabled: true
-  ScriptAsset: !<reference> d6cb8b4e-f51e-42b9-8cef-a9498174559d
-  ScriptInputsDefault:
-    runtimeLayer: true
-    customCategory: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      runtimeLayer: DEFAULT
-      customCategory: ""
-      states: !<string[]>
-        - 'init:fast,log("initialisinghealthbar"),lookAt,cameraAnchor(160,40,-30),follow(10)'
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/1709ff8a-8717-4ca2-9f0b-d0a6786b40c4>
   PrefabRemaps:
     []
@@ -7542,6 +7522,7 @@
       singlePlayerType: manual
       enableOnSingleplayerNodes: !<reference.SceneObject[]>
         - !<reference> 783d6045-1b7b-494e-b094-59b9e69a2062
+        - !<reference> 7b0e61cd-4b17-496a-9194-87896d3114b6
   ScriptTypes:
     "":
       {}
@@ -25357,7 +25338,6 @@
     - !<own> 4438cae8-8b90-4f75-8016-f3915a8cf37f
     - !<own> 11330dcd-d95c-4e22-b508-0e305364cc8c
     - !<own> c62e3149-a8e2-488d-a71c-2c96d181879d
-    - !<own> 7b0e61cd-4b17-496a-9194-87896d3114b6
     - !<own> ade9dd29-93ee-4618-a967-86d2987002ec
   Components:
     []
@@ -25783,19 +25763,19 @@
     - d05d3305-3407-4fe5-918a-0831f8a589ee: 83ab2ea5-5ad9-4651-9770-15f484b206ad
     - d35abd8d-d055-4062-b30a-8246a45456b4: 68514814-c4b4-4676-9d1f-9d49be6501e4
   Name: HealthFollow
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
-    position: {x: -26.728201, y: 27.504162, z: -93.907379}
+    position: {x: -25.000000, y: 35.000000, z: -120.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    scale: {x: 0.800000, y: 0.800000, z: 0.800000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 6364be1c-6053-4f35-883d-41cc34d437bc
     - !<own> d05d3305-3407-4fe5-918a-0831f8a589ee
     - !<own> d35abd8d-d055-4062-b30a-8246a45456b4
   Components:
-    - !<own> 16f67b22-06b7-4621-a9e4-3b6f13c4bb47
+    []
 - !<RenderMeshVisual/7b2aa0db-d3f6-411b-9cee-55e5cca89756>
   PrefabRemaps:
     []
@@ -45842,6 +45822,7 @@
   Children:
     - !<own> a7d5353d-e45c-4328-aa52-5cb130ca6eed
     - !<own> 0fee7c9a-3c00-4639-a5ef-21390cb4ceb4
+    - !<own> 7b0e61cd-4b17-496a-9194-87896d3114b6
   Components:
     - !<own> 3e0c7a5d-5ef7-4764-b22b-5005ff5ce1b2
     - !<own> 8809d7a9-2c04-4be0-806f-9bc85471a8a6
