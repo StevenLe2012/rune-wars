@@ -1,2 +1,29 @@
-# spectacles-ar-game
-Immerse the Bay 2024
+# Rune Wars - Immerse the Bay Winner (Best Use of Snap AR)
+
+Rune Wars is a simple yet strategic multiplayer PvP game to help people connect and exercise in a more engaging way while immersing them in a fantasy historical world of magic and mysticism.
+
+- Devpost: https://devpost.com/software/treejans-two-trojans-two-trees
+- YouTube: https://youtu.be/ITNNkPJjDDg?si=WqID65sxSC6VZaFV
+
+[![Rune Wars](https://i.imgur.com/pszZdEh.jpeg)](https://youtu.be/ITNNkPJjDDg?si=WqID65sxSC6VZaFV)
+
+## Inspiration
+We wanted to leverage AR to (1) transform the real environment into a new place in history, (2) connect people through shared memories, and (3) encourage people to MOVE, countering tech’s tendency to limit users to sedentary spaces. Inspired by RamenVR’s prompt on building environments reimagined for ancient civilizations, we drew on themes from various ancient cultures, like dynasty clashes in ancient China, runes and carvings from Mesopotamian cultures, and homage to tribal lands like that of the Muwekma-Olone people.
+
+## What it does
+Our game, Rune Wars, focuses on a simple yet strategic multiplayer combat system to help people connect and exercise in a more engaging way while immersing them in a fantasy historical world of magic and mysticism. Players are put into the shoes of a warrior, where they must battle for their honor and face off against one another. As for the combat, players will shoot rune-enforced stones from one hand via a pinch gesture. Using the other hand, players pinch and drag to raise temporary walls from the ground, offering strategic cover. These walls are indestructible by players and will only be destroyed after a set amount of time, preventing a stale gameplay experience where people only stay in one place. The walls are destroyed automatically after only 5 seconds, encouraging fast-paced, tactical play. To win, players reduce the opponent’s health to zero to be the last warrior standing.
+
+## How we built it
+Snap Spectacles: developed as an immersive AR experience on Snap’s hardware. Assets in Blender + Procreate: created all 3D and 2D illustrated assets by hand to maintain a consistent story and style. Shading/particle effects packages in Lens Studio: used “Cinematic Glow”, “Emission from Mesh”, and various other Snap packages to enhance assets and speed up workflow. All materials were made within Lens Studio. Shortstack: for smooth asset animations and easier implementation of more robust functionality Audio in Premiere Pro: used pitch shifting, audio panning, and lengthening techniques to add custom sound effects by cutting and remixing audio. ElevenLabs: used to create a narration for onboarding the players
+
+## Challenges we ran into
+For one, setting up the Snap Spectacles took some time to figure out. It was new technology, and there were issues with trying to connect two devices to a single Snap account, making the cooperative workflow less streamlined. For a good while, we also had to deal with a Snap Spectacles that just was not working properly and had to get that swapped out. All of us were also learning and experimenting with something new. Most of our team had limited or no experience with Lens Studio, so we were starting off with a blank slate. We were also set on learning how to use ShortStack, which introduces a completely different workflow to creating projects in Lens Studio. For those of us that were familiar with Lens Studio, it took a while to understand how to use the package and really get used to the syntax and workflow. There were also issues we encountered with ShortStack where some scripts worked in the editor but not when deployed onto the actual Spectacles, making the debugging process more complicated. We also tried to tackle Snap Spectacles’ proprietary tech for the colocation feature to develop the first ever successful multiplayer experience to have been created within Spectacles. We would get things working for single player, then everything would break when trying to expand our individual experiences to a multiplayer experience.
+
+## Accomplishments that we're proud of
+We successfully achieved colocation for a synchronized multiplayer experience! Things broke multiple times, but with every bug we had, we were able to push through and get over each hurdle. We were able to create such a beautiful game with amazing visuals and sound design. We ran into difficulties and hurdles while trying to understand the VFX, Materials, and some ShortStack systems for manipulating assets, but we were able to make many “happy little accidents” that sparked new ideas in terms of our visual design for the game.
+
+## What we learned
+We learned how to use ShortStack and Lens Studio! None of us get the chance to use Lens Studio much, so this was a great opportunity to do a deep dive into the software. ShortStack is such a powerful tool that completely elevates the development experiences within Lens Studio. Designing games is all about fun, but to stand out, you always have to link it back to applicability and the real world. With every single product, there is always a use case. Even if it is meant as pure entertainment in nature, tying that into the real world and having that elevate a real, human experience is what will make a good product into a great one
+
+## What's next for RUNE WARS
+We envision Rune Wars to be a game that revolutionizes the real of digital sports, bringing eSports back to involve actual, physical movement tied in with strategy. We want to expand the features and make different orbs to throw. These orbs will have unique features, such as having a splash radius, slowing down opponents’ attacks, or dealing damage over time. This would allow for many more strategic choices and playstyles players can develop. Another one of our priorities is to create a more expansive multiplayer experience. We envision a game where players can form teams to battle against each other. This would enable many more strategies to be developed, giving players leeway to create specific roles within the different teams and connecting people to each other through not only a competitive space, but also a collaborative one.
